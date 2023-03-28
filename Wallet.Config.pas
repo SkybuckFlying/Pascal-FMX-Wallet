@@ -160,7 +160,7 @@ Begin
     {$ELSE}
     FIsTestNet := False;
     {$IFDEF DEVMODE}
-    FServer := TStringPair.Create('localhost','http://127.0.0.1:4003');
+	FServer := TStringPair.Create('localhost','http://127.0.0.1:4004');
     {$ELSE}
     FServer := TStringPair.Create('localhost','http://127.0.0.1:4003');
     {$ENDIF}

@@ -3,11 +3,13 @@ program UrbanWallet;
 {$R 'WalletFiles.res' 'WalletFiles.rc'}
 
 uses
+{
   madExcept,
   madLinkDisAsm,
   madListHardware,
   madListProcesses,
   madListModules,
+}
   System.StartUpCopy,
   FMX.Forms,
   Wallet.Form.Main in 'Wallet.Form.Main.pas' {MainForm},
@@ -21,23 +23,23 @@ uses
   Wallet.Language.Support in 'Wallet.Language.Support.pas',
   Wallet.Utils.Misc in 'Wallet.Utils.Misc.pas',
   Wallet.Form.FirstRun in 'Wallet.Form.FirstRun.pas' {BaseSubForm1},
-  PascalCoin.Consts in '..\..\RPC-Client\Foundation\PascalCoin.Consts.pas',
+  PascalCoin.Consts in '..\PascalCoinRPCClient\Foundation\PascalCoin.Consts.pas',
   Wallet.Interfaces in 'Wallet.Interfaces.pas',
   PascalCoin.Key.Classes in 'PascalCoin.Key.Classes.pas',
-  PascalCoin.KeyUtils in '..\..\RPC-Client\Foundation\PascalCoin.KeyUtils.pas',
+  PascalCoin.KeyUtils in '..\PascalCoinRPCClient\Foundation\PascalCoin.KeyUtils.pas',
   Wallet.Frame.Base in 'Wallet.Frame.Base.pas' {BaseFrame: TFrame},
   Wallet.Frame.Settings in 'Wallet.Frame.Settings.pas' {SettingsFrame: TFrame},
   Wallet.Frame.Dashboard in 'Wallet.Frame.Dashboard.pas' {DashboardFrame: TFrame},
-  PascalCoin.RPC.Interfaces in '..\..\RPC-Client\Foundation\PascalCoin.RPC.Interfaces.pas',
-  PascalCoin.RPC.Exceptions in '..\..\RPC-Client\Foundation\PascalCoin.RPC.Exceptions.pas',
-  UC.Language.Interfaces in '..\..\RPC-Client\AppUtils\UC.Language.Interfaces.pas',
-  FMX.PlatformUtils in '..\..\RPC-Client\AppUtils\FMX.PlatformUtils.pas',
+  PascalCoin.RPC.Interfaces in '..\PascalCoinRPCClient\Foundation\PascalCoin.RPC.Interfaces.pas',
+  PascalCoin.RPC.Exceptions in '..\PascalCoinRPCClient\Foundation\PascalCoin.RPC.Exceptions.pas',
+  UC.Language.Interfaces in '..\PascalCoinRPCClient\AppUtils\UC.Language.Interfaces.pas',
+  FMX.PlatformUtils in '..\PascalCoinRPCClient\AppUtils\FMX.PlatformUtils.pas',
   Wallet.Framelet.AddNode in 'Wallet.Framelet.AddNode.pas' {AddNodeFrame: TFrame},
-  PascalCoin.Key.Interfaces in '..\..\RPC-Client\Foundation\PascalCoin.Key.Interfaces.pas',
+  PascalCoin.Key.Interfaces in '..\PascalCoinRPCClient\Foundation\PascalCoin.Key.Interfaces.pas',
   Wallet.Thread in 'Wallet.Thread.pas',
   Wallet.Frame.GetStarted in 'Wallet.Frame.GetStarted.pas' {GetStartedFrame: TFrame},
-  PascalCoin.Utils in '..\..\RPC-Client\Foundation\PascalCoin.Utils.pas',
-  UC.Utils in '..\..\RPC-Client\AppUtils\UC.Utils.pas';
+  PascalCoin.Utils in '..\PascalCoinRPCClient\Foundation\PascalCoin.Utils.pas',
+  UC.Utils in '..\PascalCoinRPCClient\AppUtils\UC.Utils.pas';
 
 {$R *.res}
 
